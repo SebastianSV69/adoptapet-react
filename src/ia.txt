@@ -16,3 +16,9 @@ prompt: Estas teniendo el siguiente error, "import React from "react"; 2 | impor
 | ^ 3 | var _jsxFileName = "T:/FE SSV/adoptapet-react/src/components/MascotaCard.jsx"; 4 | import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime"; (x11)", intnta corregir el error apartir del mensaje recibido por la consola
 
 Analisis: Logro identificar la falle correctamente, realizando que la dependencia prop-types no habia sido instalada y sugirio el reinicio inmediato del servidor para la visualizacion que ahora es correcta.
+
+Etapa 3: Lista de mascotas
+
+prompt: Ahora se creo el archivo ListaMascotas.jsx este se encuentra en src/components, este debe recibir el arreglo demascotas por props, recorrer el array con .map() y renderiza un mascotacard por cada mascota, asignar correctamente la prop key usando el id de cada elemento(no uses el indice del array) y en app.jsx debes renderizar listaMascotas pasandole los datos importados
+
+Analisis:Crea el codigo satisfactoriamente cumpliendo cada peticion que se le solicito, no se observan errores visibles en el codigo ni en la pagina.
