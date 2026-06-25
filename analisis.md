@@ -1,0 +1,6 @@
+Componente: Esta se utilizaria para reutilizar vlos componentes mascotacard, listamascotas y filtroespecie, ya que asi se mantiene el codigo dividido y facilita su reutilizacion y mantencion.
+JSX: Esto se utilizara para la interfaz de usuario, en mascotacard se puede utilizar para mostrar el nombre, especie, descripcion y caracteristicas de las mascotas, es adecuado ya que permite escribir html dentro del propio js 
+Props: es adecuado para pasar datos desde el componente listamascotas al componente mascotacard, los props permiten que los componentes se puedan reutilizar y puedan recibir datos de otro componente
+Estado: Esto se utilizara para manejar el estado de la aplicacion como el filtro de especie o la lista filtrada, useState permite utilizar los datos que cambian con las interacciones de los usuarios como lo serian los filtros
+Renderizado de listas: este se utiliza para iterar sobre el listado de mascotas, el metodo .map permite recorrer el arreglo de mascotas y generar componente para cada elemento y la key permite que react pueda identificar dicho elemento
+Renderizado condicional: esto se utilizaria para resaltar los casos de adopcion urgente, esto nos permitira ver el contenido basado en las propiedades de las mascotas.
