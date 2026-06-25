@@ -1,0 +1,18 @@
+Etapa:1 proyecto base
+prompt: Ok empezemos a programar, necesito que me ayudes a importar el array de mascotas.js en src/data(por alguna razon cargo como txt y no como js) a app.tsx y que cargue en la console.log
+
+Analisis: la IA me sugirio correctamente cambiar el nombre del archivo mascotas.txt a mascotas.js para que cargara com un js en vez de archivo de texto, y entrego un codigo pequeño pero que mostraba el arreglo en el log de la consola.
+
+Etapa: 2 Componente mascotaCard
+prompt:ok ahora debemos realizar el componente mascotacard.jsx, el componente debe recibir por props, el nombre,raza edad, especie, descrpcion y caracteristicas, la informacion debe ser mostrada de forma visual y ordenada y aplicar un estilo diferenciado segun la especie como un color o etiqueta distinto para perro gato u otro, debes tener en cuenta las siguientes buenas practicas ya que son obligatorias en este componente: define los tipos de props con proptypes (o documenta claramente cada prop) y entrega valores por defecto para evitar errores cuando falte un dato, renderiza el texto siempre como contenido jsx normal. no uses dangerouslySetInnerHTML y no dejes credenciales, claves ni datos sensibles escritos en el codigo
+
+Analisis: codigo entregado sigue buenas practicas pero no entrega el codigo para actualizar el app.tsx para visualizar la informacion.
+
+prompt:recuerda que si haces un cambio que se debe mostrar en la pagina de react tienes que actualizar el app.tsx para que sepueda visualizar, recuerda que tambien debe incluir lo que ya se te haya solicitado como lo seria que se visualize el listado demascotas en el log de laconsola
+
+Analisis: El codigo no solo no muestra contenido en la pagina sino que no identifica el prop-types, se intentara dar solucion
+
+prompt: Estas teniendo el siguiente error, "import React from "react"; 2 | import PropTypes from "prop-types";
+| ^ 3 | var _jsxFileName = "T:/FE SSV/adoptapet-react/src/components/MascotaCard.jsx"; 4 | import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime"; (x11)", intnta corregir el error apartir del mensaje recibido por la consola
+
+Analisis: Logro identificar la falle correctamente, realizando que la dependencia prop-types no habia sido instalada y sugirio el reinicio inmediato del servidor para la visualizacion que ahora es correcta.
