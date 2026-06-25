@@ -7,20 +7,20 @@ const ListaMascotas = ({ mascotas }) => {
     <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
       {mascotas.map((mascota) => (
         <MascotaCard
-          key={mascota.id} // Usar el id como key
+          key={mascota.id}
           nombre={mascota.nombre}
           raza={mascota.raza}
           edad={mascota.edad}
           especie={mascota.especie}
           descripcion={mascota.descripcion}
           caracteristicas={mascota.caracteristicas}
+          adopcionUrgente={mascota.adopcionUrgente}
         />
       ))}
     </div>
   );
 };
 
-// Definición de tipos de props
 ListaMascotas.propTypes = {
   mascotas: PropTypes.arrayOf(
     PropTypes.shape({
@@ -31,6 +31,7 @@ ListaMascotas.propTypes = {
       especie: PropTypes.string.isRequired,
       descripcion: PropTypes.string.isRequired,
       caracteristicas: PropTypes.arrayOf(PropTypes.string).isRequired,
+      adopcionUrgente: PropTypes.bool.isRequired,
     })
   ).isRequired,
 };

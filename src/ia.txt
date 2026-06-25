@@ -22,3 +22,13 @@ Etapa 3: Lista de mascotas
 prompt: Ahora se creo el archivo ListaMascotas.jsx este se encuentra en src/components, este debe recibir el arreglo demascotas por props, recorrer el array con .map() y renderiza un mascotacard por cada mascota, asignar correctamente la prop key usando el id de cada elemento(no uses el indice del array) y en app.jsx debes renderizar listaMascotas pasandole los datos importados
 
 Analisis:Crea el codigo satisfactoriamente cumpliendo cada peticion que se le solicito, no se observan errores visibles en el codigo ni en la pagina.
+
+Etapa 4: estado y filtro seguro
+Prompt: Ok ahora en el mismo src/components se creo un nuevo archivo llamado FiltroEspecie.jsx, este debe contener botones o un selector para poder filtrar por la especie: "Todas","Perro","Gato","Otro. En app.jsx debes utilizar useState para guardar el filtro seleccionado y un campo de busqueda por nombre, debes aplicar ambos filtros sobre el arreglo antes de pasarlo a ListaMascotas, usa el renderizado condicional para mostrar el mensaje "No hay mascotas que coincidan" cuando el resultado quede vacio, BUENAS PRACTICAS OBLIGATORIAS: el campo de busqueda debe ser un componente controlado(su valor vive en el estado de react), validar y normaliza el texto de busqueda(recorta espacios y limita el largo) antes de usarlo, para no confiar ciegamente en la entrada de usuario
+
+Analisis: Codigo creado nuevamente de forma satisfactoria, sigue las buenas practicas y cumple con todo lo que se le solicito, nuevamente no se han observado ningun tipo de errores tanto en el codigo como en la pagina.
+
+Etapa 5: Destacar las adopciones urgentes
+prompt:Esta es la e tapa final, destacar las adopciones urgentes, debes resaltar visualmente los elementos con adopcionUrgente:true (por ejemplo, una etiqueta "URGENTE" o un borde distinto), agregar un contador que muestre cuantas mascotas tienen adopcion urgente y verifica que toda la app corre sin errores ni warnings en la consola
+
+Analisis: Vuelve a cumplir con todo lo solicitado satisfactoriamente, estructura mantenida con pequeños cambios realizados en el codigo segun lo solicitado, sin la generacion de ningun tipo de error.
